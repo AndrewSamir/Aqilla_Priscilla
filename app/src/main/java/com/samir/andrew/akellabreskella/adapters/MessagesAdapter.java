@@ -1,0 +1,95 @@
+package com.samir.andrew.akellabreskella.adapters;
+
+import android.app.Activity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
+
+
+import com.samir.andrew.akellabreskella.R;
+import com.samir.andrew.akellabreskella.models.NotificationModel;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
+/**
+ * Created by andre on 05-May-17.
+ */
+
+public class MessagesAdapter extends ArrayAdapter<NotificationModel> {
+
+    private Activity activity;
+    private List<NotificationModel> notificationModelList;
+
+    public MessagesAdapter(Activity context, int resource, List<NotificationModel> objects) {
+        super(context, resource, objects);
+        this.activity = context;
+        this.notificationModelList = objects;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder holder;
+        LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
+
+        int layoutResource = 0; // determined by view type
+        NotificationModel notificationModel = getItem(position);
+        int viewType = getItemViewType(position);
+
+       /* if (chatMessage.isMine()) {
+            layoutResource = R.layout.item_chat_left;
+        } else {
+            layoutResource = R.layout.item_chat_right;
+        }*/
+
+        layoutResource = R.layout.item_notification_message;
+
+        if (convertView != null) {
+            holder = (ViewHolder) convertView.getTag();
+        } else {
+            convertView = inflater.inflate(layoutResource, parent, false);
+            holder = new ViewHolder(convertView);
+            convertView.setTag(holder);
+        }
+
+        SimpleDateFormat format = new SimpleDateFormat("dd-MMM-yy  hh:mm a");
+        String date = format.format(Date.parse(notificationModel.getTime()));
+
+
+
+        //set message content
+        holder.msg.setText(notificationModel.getText());
+        holder.time.setText(date);
+
+
+        return convertView;
+    }
+
+    @Override
+    public int getViewTypeCount() {
+        // return the total number of view types. this value should never change
+        // at runtime
+        return 2;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        // return a value between 0 and (getViewTypeCount - 1)
+        return position % 2;
+    }
+
+    private class ViewHolder {
+        private TextView msg, time;
+
+        public ViewHolder(View v) {
+
+            msg = (TextView) v.findViewById(R.id.tvNotificationMessage);
+            time = (TextView) v.findViewById(R.id.tvNotificationTime);
+
+        }
+    }
+
+}

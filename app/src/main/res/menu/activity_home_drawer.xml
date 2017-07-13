@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_st_mark"
+            android:icon="@drawable/ic_action_format_list_numbered"
+            android:title="كنيسة مارمرقس بشبرا" />
+        <item
+            android:id="@+id/nav_aqilla_priscilla_story"
+            android:icon="@drawable/ic_action_radio"
+            android:title="حياة القديسين اكيلا و بريسكلا " />
+
+        <item
+            android:id="@+id/nav_meeting_summary"
+            android:icon="@drawable/ic_action_radio"
+            android:title="نبذة عن الاجتماع" />
+
+
+        <item
+            android:id="@+id/nav_meeting_legan"
+            android:icon="@drawable/ic_action_group"
+            android:title="لجان الاجتماع" />
+
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_action_library_books"
+            android:title="تواصل معنا" />
+
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_action_library_books"
+            android:title="رسائل" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_action_info"
+            android:title="About Us" />
+
+    </group>
+
+
+</menu>

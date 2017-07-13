@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.samir.andrew.akellabreskella.Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:id="@+id/leniarTvs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conference_number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/from_to" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAqilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leniarTvs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shap_1_"
+        android:gravity="center"
+        android:text="@string/akella_breskella_meeting"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvAya"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAqilla"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="الاية"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="@string/now"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvHappenNowHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shap_2_"
+            android:gravity="center"
+            android:text="كلمة روحية"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvPlaceHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shap_2_"
+            android:gravity="center"
+            android:text="كلمة روحية"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

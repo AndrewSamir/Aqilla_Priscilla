@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Aqilla &amp; Priscila</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Aqilla &amp; Priscila</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="akella_breskella_meeting">اجتماع اكيلا و بريسكلا</string>
+    <string name="conference_number">المؤتمر السادس</string>
+    <string name="from_to">25-23 يونيو 2017</string>
+    <string name="now">NOW</string>
+    <string name="nav_programme">البرنامج</string>
+    <string name="nav_tranim">ترانيم</string>
+    <string name="nav_pray">صلاة غروب</string>
+    <string name="nav_hymens">الحان</string>
+    <string name="nav_magazine">مجلة</string>
+    <string name="nav_tanbihat">تنبيهات</string>
+    <string name="nav_groups">المجموعات</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_programme_html">ِاكيلا و بريسكيلا</string>
+    <string name="title_activity_days_list">البرنامج</string>
+    <string name="be_happy_with_god">افرح بربنا</string>
+    <string name="be_happy_with_children">افرح بأولادك</string>
+    <string name="be_happy_with_patrner">افرح بشريكك</string>
+    <string name="title_activity_tranim_list">الترانيم</string>
+    <string name="title_activity_hymns_list">الالحان</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="nav_bible">رسالة فيليبى</string>
+    <string name="st_mark_church">كنيسة مارمرقس بشبرا</string>
+    <string name="title_activity_messages_list">الرسائل</string>
+</resources>

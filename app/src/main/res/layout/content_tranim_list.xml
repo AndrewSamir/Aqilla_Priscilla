@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.samir.andrew.akellabreskella.TranimList"
+    tools:showIn="@layout/activity_tranim_list">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTranimOloLelSediik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="قولو للصديق "
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_day_size" />
+
+        <TextView
+            android:id="@+id/tvTranimAalyLfook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="عالي لفوق "
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_day_size" />
+
+        <TextView
+            android:id="@+id/tvTranimGhnoM3aia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="غنوا معايا يا شعب الرب "
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_day_size" />
+
+        <TextView
+            android:id="@+id/tvTranimAnaHafra7Beek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="أنا حافرح بيك "
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_day_size" />
+
+        <TextView
+            android:id="@+id/tvTranimBemrahemElrab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="بمراحِم الرب أغني "
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_day_size" />
+
+        <TextView
+            android:id="@+id/tvTranimFar7etAlbyYoumMa2bltk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="فرَّحت قلبي يوم ما قابلتك "
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_day_size" />
+
+        <TextView
+            android:id="@+id/tvTranimFarhanBeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="فرحان بيك وأنا ماشي معاك "
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_day_size" />
+
+        <TextView
+            android:id="@+id/tvTranimM3aEnElEtneen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="مع ان التنين لايزهر"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_day_size" />
+
+        <TextView
+            android:id="@+id/tvTranimOmryMaDo2t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="عمري ما دُقت سعادة في قلبي "
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_day_size" />
+
+        <TextView
+            android:id="@+id/tvTranimYerwinyBhnana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="يارويني يا يسوع بحنانك "
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_day_size" />
+    </LinearLayout>
+</ScrollView>
